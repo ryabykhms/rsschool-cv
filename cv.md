@@ -81,7 +81,7 @@ alertcondition(isLow == 1, 'BBAA UP!', 'UP')
 ## Experience
 
 - Youtube courses by [Yauhen Kovalchuk](https://www.youtube.com/channel/UCE9ODjNIkOHrnSdkYWLfYhg), [Vladilen Minin](https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw) and many others.
-- Java Junior Developer | Institute of High Technologies (June 2015 - September 2016):
+- Java Junior Developer. Institute of High Technologies (June 2015 - September 2016):
   - Unit and UI testing the application for the system of operational management of the company.
   - Unit testing applications for monitoring transformer substations.
   - Writing modules for backend applications for monitoring transformer substations
