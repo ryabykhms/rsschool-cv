@@ -1,0 +1,279 @@
+/*
+ * Variables
+ */
+
+:root {
+  --primary-color: #f8f8f8;
+  --secondary-color: #49494b;
+  --accent-color: #ef942b;
+  --text-light-color: #777;
+}
+
+/*
+ * Main styles for project
+ */
+html {
+  font-size: 14px;
+}
+
+body {
+  line-height: 2;
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: -20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+}
+
+footer {
+  flex: 0 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.unmarked-list {
+  padding: 0;
+}
+
+.unmarked-list li {
+  list-style-type: none;
+}
+
+._item-caption {
+  font-weight: bold;
+}
+
+/*
+ * Styles for the left and right sections
+ */
+
+.section-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.section-left a {
+  color: var(--primary-color);
+}
+
+.section-left section,
+.section-right section {
+  padding: 0 40px;
+}
+
+.section-left section h2 {
+  padding: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: 5px solid var(--primary-color);
+}
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 50px;
+  color: var(--text-light-color);
+}
+
+.section-right a {
+  color: var(--secondary-color);
+}
+
+.section-right section h2 {
+  padding: 5px;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  text-align: center;
+  text-transform: uppercase;
+  border: 5px solid var(--secondary-color);
+}
+
+/*
+* Styles for avatar and description
+*/
+
+.avatar {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.avatar__photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50% 0% 50% 0;
+  object-fit: cover;
+}
+
+.avatar__description {
+  position: relative;
+  z-index: 1;
+  padding: 10px 0;
+  margin-top: -30px;
+  background-color: var(--accent-color);
+}
+
+.avatar__description-profession {
+  font-size: 1.5rem;
+}
+
+/*
+* Styles for contacts section
+*/
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  font-style: normal;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.address__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.address__icon,
+.web__icon {
+  fill: var(--accent-color);
+}
+
+.address__icon,
+.web__icon {
+  margin-right: 10px;
+}
+
+/*
+* Styles for progress bar
+*/
+
+.progress-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.progress-list__item,
+.progress-list__progress {
+  width: 50%;
+}
+
+progress[value] {
+  /* Dimensions */
+  height: 15px;
+
+  /* For IE10 */
+  color: var(--accent-color);
+
+  /* Get rid of default border in Firefox. */
+  border: none;
+
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: var(--accent-color);
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+/*
+* Styles for sections with short info in the right section
+*/
+
+.short-info {
+  margin-bottom: 20px;
+}
+
+.short-info__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.short-info__name {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.short-info__additional {
+  text-transform: uppercase;
+}
+
+#experiences {
+  flex: 1 0 auto;
+}
+
+@media (max-width: 991.98px) {
+  .progress-list__item {
+    width: 60%;
+  }
+
+  .progress-list__progress {
+    width: 40%;
+  }
+
+  .section-left,
+  .section-right {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  main {
+    flex-direction: column;
+  }
+
+  .section-left,
+  .section-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
