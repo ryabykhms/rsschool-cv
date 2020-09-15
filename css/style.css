@@ -177,6 +177,7 @@ footer {
 
 .progress-list li {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
 }
