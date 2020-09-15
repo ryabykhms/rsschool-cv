@@ -244,3 +244,35 @@ progress[value]::-webkit-progress-value {
 #experiences {
   flex: 1 0 auto;
 }
+
+@media (max-width: 991.98px) {
+  .progress-list__item {
+    width: 60%;
+  }
+
+  .progress-list__progress {
+    width: 40%;
+  }
+
+  .section-left,
+  .section-right {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  main {
+    flex-direction: column;
+  }
+
+  .section-left,
+  .section-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
